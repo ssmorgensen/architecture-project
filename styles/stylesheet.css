@@ -6,20 +6,33 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-weight: bold;}
+  font-weight: bold;
+  text-align: center;}
 
 h3 {
   font-size: 17px;
-  font-weight: bold;}
+  font-weight: bold;
+  text-align: center;}
+
+h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #1b447f;}
 
 p {
   font-size: 17px;
   font-weight: bold;}
 
+nav {
+  font-size: 24px;
+  font-weight: bold;}
+
 .container {
   display: grid;
-  grid-template-rows: 20% 5% 60% 15%;
-  grid-template-columns:  20% 20% 20% 20% 20%;}
+  max-width: 1200px;
+  grid-template-rows: 10% 3% 75% 12%;
+  grid-template-columns:  20% 20% 20% 20% 20%;
+  justify-content: space-between;}
 
 .header {
   background-color: #03a3df;

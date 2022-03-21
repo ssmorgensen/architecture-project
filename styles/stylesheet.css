@@ -2,7 +2,8 @@
 
 h1 {
   font-size: 40px;
-  font-weight: bold;}
+  font-weight: bold;
+  color: #ffffff;}
 
 h2 {
   font-size: 24px;
@@ -25,30 +26,49 @@ p {
 
 nav {
   font-size: 24px;
-  font-weight: bold;}
+  font-weight: bold;
+  background-color: #1b447f;
+  grid-area: 4 / 1 / 5 / 6;
+  padding: .5em 3em .5em 3em;}
+
+a {
+  color: #ffffff;
+  text-decoration: none;}
 
 .container {
   display: grid;
-  max-width: 1200px;
-  grid-template-rows: 10% 3% 75% 12%;
-  grid-template-columns:  20% 20% 20% 20% 20%;
-  justify-content: space-between;}
-
-.header {
-  background-color: #03a3df;
-  color: #ffffff;
-  grid-area: 1 / 1 / 2 / 6;}
-
-nav {
-  background-color: #1b447f;
-  color: #ffffff;
-  grid-area: 2 / 1 / 3 / 6;}
+  max-width: 1440px;
+  grid-template-rows: 2% 8% 2% 3% 72% 13%;
+  grid-template-columns:  5% 30% 30% 30% 5%;}
 
 .main {
   background-color: #ffffff;
   color: #444444;
-  grid-area: 3 / 1 / 4 / 6;}
+  grid-area: 5 / 1 / 6 / 6;
+  padding: 0em 1em 0em 1em;}
 
 footer {
-  color: #444444;
-  grid-area: 4 / 1 / 5 / 6;}
+  grid-area: 6 / 1 / 7 / 6;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  background-image: url(../images/footerImage.jpg);
+  padding: 1.5em 1em 1em .5em;}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;}
+
+.logo {
+  float: left;
+  padding: 1.5em 2em 2.5em 2em;}
+
+.header {
+  background-color: #03a3df;
+  color: #ffffff;
+  grid-area: 1 / 1 / 4 / 7;}
+
+
+.title {
+  float: right;
+  padding: 1.5em 2em 2.5em 2em;}

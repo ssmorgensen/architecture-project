@@ -22,7 +22,8 @@ h4 {
 
 p {
   font-size: 17px;
-  font-weight: bold;}
+  font-weight: bold;
+  line-height: 1.5}
 
 nav {
   font-size: 24px;
@@ -38,8 +39,27 @@ a {
 .container {
   display: grid;
   max-width: 1440px;
+  min-height: 1600px;
   grid-template-rows: 2% 8% 2% 3% 72% 13%;
-  grid-template-columns:  5% 30% 30% 30% 5%;}
+  grid-template-columns:  5% 30% 30% 30% 5%;
+  align-content: space-around;}
+
+.header {
+  background-color: #03a3df;
+  color: #ffffff;
+  grid-area: 1 / 1 / 4 / 7;}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;}
+
+.logo {
+  float: left;
+  padding: 1.5em 2em 2.5em 2em;}
+
+.title {
+  float: right;
+  padding: 1.5em 2em 2.5em 2em;}
 
 .main {
   background-color: #ffffff;
@@ -53,7 +73,7 @@ footer {
   font-weight: bold;
   font-size: 24px;
   background-image: url(../images/footerImage.jpg);
-  padding: 1.5em 1em 1em .5em;}
+  padding: 1em 1em 1em 1em;}
 
 .flex-container {
   display: flex;
@@ -68,7 +88,20 @@ footer {
   color: #ffffff;
   grid-area: 1 / 1 / 4 / 7;}
 
-
 .title {
   float: right;
   padding: 1.5em 2em 2.5em 2em;}
+
+.container-instructors {
+  display: grid;
+  max-width: 1392px;
+  grid-template-rows: 5% 25% 70%;
+  grid-template-columns:  auto auto auto;
+  grid-column-gap: 5em;
+  padding: 2em 1em 2em 1em;}
+
+.container-instructors img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 2em 2em 2em;}
